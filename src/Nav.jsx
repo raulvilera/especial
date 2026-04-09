@@ -32,16 +32,29 @@ export default function Nav() {
           </a>
         ))}
       </div>
-      <a href="#acesso" style={{
-        background:'var(--teal)',color:'#fff',
-        padding:'9px 20px',borderRadius:8,
-        fontSize:14,fontWeight:600,
-        transition:'all .2s',display:'inline-block'
-      }}
-        onMouseEnter={e=>e.target.style.background='var(--teal4)'}
-        onMouseLeave={e=>e.target.style.background='var(--teal)'}>
-        Solicitar acesso antecipado
-      </a>
+      <div style={{display:'flex',alignItems:'center',gap:10}}>
+        <a href="https://especiais-one.vercel.app/" target="_blank" rel="noopener noreferrer" style={{
+          background:'transparent',color:'var(--teal)',
+          padding:'9px 20px',borderRadius:8,
+          fontSize:14,fontWeight:600,
+          border:'1.5px solid var(--teal)',
+          transition:'all .2s',display:'inline-block'
+        }}
+          onMouseEnter={e=>e.target.style.background='var(--teal2)'}
+          onMouseLeave={e=>e.target.style.background='transparent'}>
+          Acessar plataforma
+        </a>
+        <a href="#acesso" style={{
+          background:'var(--teal)',color:'#fff',
+          padding:'9px 20px',borderRadius:8,
+          fontSize:14,fontWeight:600,
+          transition:'all .2s',display:'inline-block'
+        }}
+          onMouseEnter={e=>e.target.style.background='var(--teal4)'}
+          onMouseLeave={e=>e.target.style.background='var(--teal)'}>
+          Solicitar acesso antecipado
+        </a>
+      </div>
     </nav>
   )
 }
